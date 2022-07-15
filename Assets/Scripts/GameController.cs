@@ -34,4 +34,14 @@ public class GameController : MonoBehaviour
         Time.timeScale = 1;
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
+
+    public void PlayGame()
+    {
+        SceneManager.LoadScene("Gameplay");
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
 }
