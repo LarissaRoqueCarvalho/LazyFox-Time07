@@ -35,9 +35,9 @@ public class GameController : MonoBehaviour
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
-    public void PlayGame()
+    public void PlayGame(string nome)
     {
-        SceneManager.LoadScene("Gameplay");
+        SceneManager.LoadScene(nome);
     }
 
     public void ExitGame()
